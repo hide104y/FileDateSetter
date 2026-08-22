@@ -24,7 +24,7 @@ gh repo list | Select-String FileDateSetter
 # CD
 cd D:\Github\Projects
 # フォルダが存在する場合は削除
-if (-Not (Test-Path -Path .\FileDateSetter)){rmdir .\FileDateSetter}
+if (Test-Path -Path .\FileDateSetter){rm -Recurse -Force .\FileDateSetter}
 # クローン実行
 git clone https://github.com/hide104y/FileDateSetter.git
 ```
@@ -156,7 +156,7 @@ dotnet publish .\FileDateSetter\FileDateSetter\FileDateSetter.csproj -c Release 
 # CD
 cd D:\Github\Projects
 # フォルダが存在する場合は削除
-if (-Not (Test-Path -Path .\FileDateSetter)){rmdir .\FileDateSetter}
+if (Test-Path -Path .\FileDateSetter){rm -Recurse -Force .\FileDateSetter}
 # クローン実行
 git clone -b dotnet10 https://github.com/hide104y/FileDateSetter.git
 ```
