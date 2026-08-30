@@ -1,5 +1,4 @@
 # FileDateSetter
-# FileDateSetter
 
 ## 事前作業
 1. JDKがインストールされていない場合はインストール：winget install -e --id Amazon.Corretto.17.JDK
